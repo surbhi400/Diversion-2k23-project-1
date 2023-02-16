@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin:0px;
+    font-family: 'Inter', sans-serif;
+}
+.header-section{
+    background-color: #00D285;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+.user-authentication{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    font-size:18px;
+}
+.brand-name{
+    font-size:24px;
+}
+.log-in a{
+    text-decoration: none;
+    color: white;
+}
+section.main-section {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 90vh;
+    background-image: url(/Assets/Images/building-image.jpg);
+    background-size: cover;
+}
+.main-section-container {
+    height: 50px;
+    /* border: 1px solid black;
+    border-radius: 11px; */
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin-left: 100px;
+    flex-direction: column;
+    margin-bottom:120px;
+}
+.search-box-container {
+    border: 1px solid black;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    align-items: center;
+    /* margin-left: 40px; */
+    padding-left: 15px;
+    /* padding: 5px 15px; */
+}
+.main-heading {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+span.main-heading-item {
+    color: #00D285;
+}
+.search-box-item {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.search {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    background-color: #00d285;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    width:100px;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+span.search-box-item-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
+.horizontal-line{
+    width: 0.1px;
+    height: 20px;
+    margin: 0;
+}
+section.about {
+    /* background-color: #464646; */
+    margin-top: 50px;
+}
+.about-section-content {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 100px;
+    padding: 50px 100px;
+}
+.image-container{
+    width: 300px;
+    height: 300px;
+    background-image: url(/Assets/Images/girl.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 9px;
+}
+.about-main {
+    background-color: #464646;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 400px;
+    color: white;
+    justify-content: center;
+}
+.about-section-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-content: flex-start; */
+    /* align-content: start; */
+    margin-left: 50px;
+    height: 77%;
+    width: 50%;
+}
+.about-section-heading {
+    color: #00d285;
+    font-size: 26px;
+    font-weight: 600;
+    /* position: relative; */
+    /* bottom: 52px; */
+    margin-bottom: 14px;
+}
+.about-section-headline {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.about-us {
+    font-size: 14px;
+    color: #DCDCDC;
+}
