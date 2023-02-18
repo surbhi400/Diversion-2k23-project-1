@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/landingpage.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/landingpage.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,8 +13,8 @@
         <nav class="nav-bar">
             <div class="brand-name">Lorem.</div>
             <div class="user-authentication">
-                <div class="log-in"><a href="login.html" target="_blank" rel="noopener noreferrer">Log in</a>  </div>
-                <div class="sign-up"><a href="signup.html" target="_blank" rel="noopener noreferrer"> Sign up </a></div>
+                <div class="log-in"><a href="login.hbs" target="_blank" >Log in</a>  </div>
+                <div class="sign-up"><a href="signup.hbs" target="_blank" > Sign up </a></div>
             </div>
         </nav>
     </header>
@@ -50,7 +51,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about-section">
         <div class="about-section-content">
             <div class="about-main">
             <div class="about-section-picture">
@@ -176,6 +177,43 @@
         <div class="faq-heading">
             Frequently Asked <span class="questions">Questions</span>
         </div>
+        <div class="questions-container">
+            <hr>
+            <div class="question-item">
+                <div class="questions">
+                    How does it work?
+                </div>
+                <div class="plus-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#00D285" class="bi bi-plus" viewBox="0 0 16 16">
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+</svg>
+                </div>
+            </div>
+            <hr>
+            <div class="question-item">
+                <div class="questions">
+                    How does it work?
+                </div>
+                <div class="plus-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#00D285" class="bi bi-plus" viewBox="0 0 16 16">
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+</svg>
+                </div>
+            </div>
+            <hr>
+            <div class="question-item">
+                <div class="questions">
+                    How does it work?
+                </div>
+                <div class="plus-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#00D285" class="bi bi-plus" viewBox="0 0 16 16">
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+</svg>
+                </div>
+            </div>
+            <hr>
+        </div>
     </section>
+    {{>footer}}
 </body>
 </html>

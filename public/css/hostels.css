@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin:0px;
+    font-family: 'Inter', sans-serif;
+}
+.nav-bar{
+    background-color: #00D285;
+    padding: 10px 31px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name {
+    font-size: 24px;
+}
+.nav-search {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 5px;
+}
+.search-item {
+    color: white;
+    border: 1px solid #00d285;
+    padding: 6px 8px;
+    border-radius: 25px;
+    background-color: #00d285;
+    font-size: 15px;
+}
+.filters-section {
+    padding: 5px 31px;
+    display: flex;
+    box-shadow: 0px 2px 9px #c1c1c1;
+
+}
+.filter-item-box {
+    border: 1px solid black;
+    width: 11%;
+    padding: 4px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 5px;
+    height: 26px;
+}
+span.down-arrow {
+    display: flex;
+}
+section.main-section {
+    padding: 45px 31px;
+}
+.section-heading {
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.items {
+    /* width: 280px; */
+    /* border-radius: 9px; */
+    /* border: 1px solid white; */
+    box-shadow: 0px 3px 9px 3px #c9c6c6;
+    width: 280px;
+    margin-right: 25px;
+    margin-bottom: 55px;
+    border-radius: 9px;
+}
+.items-image {
+    width: 280px;
+    height: 210px;
+    background: url(/Assets/Images/house.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.items-details {
+    padding: 15px 5px;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.view-details-btn {
+    display: flex;
+    justify-content: center;
+    /* padding: 5px; */
+    padding-bottom: 10px;
+    background-color: #00d285;
+    color: white;
+    font-weight: 600;
+    padding-top: 10px;
+    width: 95%;
+    align-items: center;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
