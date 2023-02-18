@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+.afterloginpagecontainer {
+    width: 1520px;
+    height: 2500px;
+
+}
+
+.optioncontainer {
+    width: 1520px;
+    height: 695px;
+
+}
+
+.navbar {
+    position: relative;
+    width: 1520px;
+    height: 70px;
+    background-color: #00D285;
+
+}
+
+.logo {
+
+    position: relative;
+    top: 23px;
+    left: 72px;
+    font-size: 21px;
+    color: white;
+    width: 88px;
+}
+
+.searchbar {
+    position: relative;
+    font-size: 18px;
+    bottom: 12px;
+    left: 330px;
+    width: 527px;
+    height: 40px;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.loc {
+    position: relative;
+    left: 50px;
+    top: 10px;
+    font-size: 17px;
+    width: 100px;
+    text-align: left;
+
+}
+
+.vl-loc {
+    border-left: 2px solid black;
+    height: 30px;
+    position: relative;
+    left: 160px;
+    bottom: 14px;
+
+
+}
+
+.loca {
+    position: relative;
+    left: 210px;
+    bottom: 40px;
+    font-size: 17px;
+    width: 100px;
+    text-align: left;
+
+
+}
+
+.vl-loca {
+    border-left: 2px solid black;
+    height: 30px;
+    position: relative;
+    left: 310px;
+    bottom: 63px;
+
+}
+
+.type {
+    position: relative;
+    left: 350px;
+    bottom: 90px;
+    font-size: 17px;
+    width: 100px;
+
+    /* border: 1px solid black; */
+
+
+}
+
+.search_bar {
+    position: absolute;
+    left: 460px;
+    top: 10px;
+}
+
+.listproperty {
+    position: relative;
+    bottom: 53px;
+    left: 1008px;
+    width: 266px;
+    height: 40px;
+    border-radius: 32px;
+    border: 1px solid white;
+}
+
+.prop {
+    position: relative;
+    left: 60px;
+    top: 10px;
+    font-size: 17px;
+    width: 140px;
+
+}
+
+.about {
+    position: relative;
+    bottom: 95px;
+    background-color: #D9D9D9;
+    ;
+    border-radius: 50%;
+    ;
+    width: 47px;
+    height: 47px;
+    left: 1370px;
+}
+
+.resident-type {
+    height: 625px;
+    width: 1520px;
+
+
+
+}
+
+.column-pg {
+    width: 25%;
+    height: 45vh;
+    position: relative;
+    float: left;
+    text-align: center;
+    top: 14%;
+    left: 85px;
+    border: 1px solid black;
+    background-image: url(images/pexels-curtis-adams-7601116.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.column-hostel {
+    width: 25%;
+    height: 45vh;
+    position: relative;
+    float: left;
+    text-align: center;
+    top: 14%;
+    left: 175px;
+    border: 1px solid black;
+    background-image: url(images/pexels-pixabay-260553.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.column-apartment {
+    width: 25%;
+    height: 45vh;
+    position: relative;
+    float: left;
+    text-align: center;
+    top: 14%;
+    left: 265px;
+    border: 1px solid black;
+    background-image: url(images/pexels-vlado-paunovic-14383526.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.pg {
+    width: 35px;
+
+    position: relative;
+    top: 78%;
+    left: 90px;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.hostel {
+    width: 70px;
+    position: relative;
+    top: 75%;
+    left: 574px;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.apartment {
+    width: 110px;
+
+    position: relative;
+    top: 71%;
+    left: 1070px;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.main-container-rooms-examples {
+    width: 1520px;
+    height: 1280px;
+
+
+}
+
+.popular-pg-hostels-apartments {
+    width: 1323px;
+    height: 1200px;
+    position: absolute;
+    left: 90px;
+    background-color: bisque;
+}
+
+.popular-pg-in-kolkata {
+
+    width: 1323px;
+    height: 380px;
+    background-color: aliceblue;
+}
+
+/* .column-pg-in-kolkata{
+    width: 1323px;
+    height:380px;
+    background-color: beige;
+} */
+.popular-pg-text {
+
+    font-size: 21px;
+
+}
+
+.footer-section {
+    width: 1520px;
+    height: 450px;
+
+}
+
+.footer-text-section {
+    border-top: 1px solid black;
+    width: 1323px;
+    position: absolute;
+    left: 90px;
+
+}
+
+.brand {
+    width: 180px;
+    height: 36px;
+    position: absolute;
+    top: 60px;
+    font-size: 21px;
+    font-weight: bold;
+
+}
+
+.brand-about-info {
+    width: 670px;
+    height: 238px;
+    position: absolute;
+    top: 125px;
+    font-size: 18px;
+    word-spacing: 3px;
+}
+
+.social-media {
+    width: 170px;
+    height: 39px;
+    font-size: 20px;
+    position: absolute;
+    top: 400px;
+}
+
+.services {
+    width: 125px;
+    height: 36px;
+    position: absolute;
+    left: 996px;
+    top: 60px;
+    font-size: 21px;
+}
+
+.services-text {
+    width: 220px;
+    height: 234px;
+    position: absolute;
+    left: 998px;
+    top: 125px;
+    font-size: 18px;
+    word-spacing: 2px;
+
+}
+
+.copyright-section {
+    width: 1520px;
+    height: 75px;
+    background-color: #464646;
+    color: white;
+    border-radius: 11px 11px 0px 0px;
+
+}
+
+.copyright {
+
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-size: 19px;
+
+}
+
+.facebook-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 979px;
+    background-image: url(images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
+
+.instagram-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1030px;
+    background-image: url(images/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
+
+.twitter-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1081px;
+    background-image: url(images/twitter.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
+
+.youtube-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1132px;
+    background-image: url(images/youtube.png);
+    background-size: 35px 35px;
+
+}
+
+.linkedln-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1183px;
+    background-image: url(images/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
