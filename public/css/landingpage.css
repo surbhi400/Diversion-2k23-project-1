@@ -276,3 +276,30 @@ section.working-section {
     flex-direction: column;
     
 }
+section.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.faq-heading {
+    font-size: 19px;
+    margin-bottom: 70px;
+}
+span.questions {
+    color: #00d285;
+    font-weight: 600;
+    /* margin-bottom: 50px; */
+}
+.questions-container {
+    width: 50%;
+}
+.questions {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.question-item {
+    display: flex;
+    justify-content: space-between;
+}

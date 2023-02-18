@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/diversion", {
-    useNewUrlParser:true,
-    useUnifiedTopolofy:true,
-    useCreateIndex:true
-}).then(() => {
-    console.log(`connection successful`);
-}).catch((e)=>{
-    console.log(`no connection`);
+mongoose.set("strictQuery", false);
+mongoose.connect("mongodb://0.0.0.0:27017/diversion", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true, 
 })
+.then(() => {
+    console.log(`connection successful`);
+}).catch((err)=>{
+    console.log(err);
+});
