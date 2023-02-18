@@ -3,12 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', 'sans-serif';
     /* overflow-x: hidden; */
 }
 
 .afterloginpagecontainer {
     width: 1520px;
-    height: 2500px;
+    height: 2700px;
 
 }
 
@@ -23,14 +24,14 @@
     width: 1520px;
     height: 70px;
     background-color: #00D285;
-
+    /* overflow-y: hidden; */
 }
 
 .logo {
 
     position: relative;
     top: 23px;
-    left: 72px;
+    left: 130px;
     font-size: 21px;
     color: white;
     width: 88px;
@@ -45,6 +46,7 @@
     height: 40px;
     background-color: white;
     border-radius: 32px;
+    /* overflow-y: hidden; */
 }
 
 .loc {
@@ -83,14 +85,14 @@
     height: 30px;
     position: relative;
     left: 310px;
-    bottom: 63px;
+    bottom: 65px;
 
 }
 
 .type {
     position: relative;
     left: 350px;
-    bottom: 90px;
+    bottom: 92px;
     font-size: 17px;
     width: 100px;
 
@@ -119,8 +121,9 @@
     position: relative;
     left: 60px;
     top: 10px;
-    font-size: 17px;
+    font-size: 16px;
     width: 140px;
+
 
 }
 
@@ -133,7 +136,7 @@
     ;
     width: 47px;
     height: 47px;
-    left: 1370px;
+    left: 1360px;
 }
 
 .resident-type {
@@ -151,7 +154,7 @@
     float: left;
     text-align: center;
     top: 14%;
-    left: 85px;
+    left: 130px;
     border: 1px solid black;
     background-image: url(/public/Assets/Images/pexels-curtis-adams-7601116.jpg);
     background-repeat: no-repeat;
@@ -167,7 +170,7 @@
     float: left;
     text-align: center;
     top: 14%;
-    left: 175px;
+    left: 195px;
     border: 1px solid black;
     background-image: url(images/pexels-pixabay-260553.jpg);
     background-repeat: no-repeat;
@@ -183,7 +186,7 @@
     float: left;
     text-align: center;
     top: 14%;
-    left: 265px;
+    left: 260px;
     border: 1px solid black;
     background-image: url(images/pexels-vlado-paunovic-14383526.jpg);
     background-repeat: no-repeat;
@@ -196,7 +199,7 @@
 
     position: relative;
     top: 78%;
-    left: 90px;
+    left: 133px;
     font-size: 20px;
     font-weight: bold;
     /* font-family: Arial, Helvetica, sans-serif; */
@@ -206,7 +209,7 @@
     width: 70px;
     position: relative;
     top: 75%;
-    left: 574px;
+    left: 580px;
     font-size: 20px;
     font-weight: bold;
     /* font-family: Arial, Helvetica, sans-serif; */
@@ -217,56 +220,373 @@
 
     position: relative;
     top: 71%;
-    left: 1070px;
+    left: 1025px;
     font-size: 20px;
     font-weight: bold;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .main-container-rooms-examples {
-    width: 1520px;
-    height: 1280px;
+    width: 1502px;
+    height: 1470px;
+    position: relative;
+    left: 18px;
 
 
 }
 
 .popular-pg-hostels-apartments {
     width: 1323px;
-    height: 1200px;
+    height: 1400px;
     position: absolute;
     left: 90px;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 .popular-pg-in-kolkata {
 
     width: 1323px;
-    height: 380px;
-    background-color: aliceblue;
+    height: 465px;
+
 }
 
-/* .column-pg-in-kolkata{
+.popular-pg-text,
+.popular-hostel-text,
+.popular-apartment-text {
+    position: relative;
+    font-size: 23px;
+    left: 20px;
+
+
+}
+
+.column-pg-in-kolkata-1 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    position: relative;
+    top: 17px;
+    left: 14px;
+    border-radius: 9px;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+}
+
+.column-pg-in-kolkata-2 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+    position: relative;
+    top: 17px;
+    left: 28px;
+    border-radius: 9px;
+
+}
+
+.column-pg-in-kolkata-3 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+    position: relative;
+    top: 17px;
+    left: 42px;
+    border-radius: 9px;
+
+}
+
+.column-pg-1-1,
+.column-pg-2-2,
+.column-pg-3-3 {
+    width: 391px;
+    height: 32vh;
+    border-radius: 9px;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    background-color: #D9D9D9;
+}
+
+.pg-name {
+    position: absolute;
+    top: 38vh;
+    left: 15px;
+    font-size: 15px;
+}
+
+.pg-area {
+    position: absolute;
+    top: 42vh;
+    left: 17px;
+    font-size: 15px;
+
+}
+
+.pg-btn {
+    position: absolute;
+    width: 391px;
+    height: 5vh;
+    top: 48vh;
+    left: 15px;
+    border-radius: 9px;
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 17px;
+}
+
+.like-meter-pg {
+    width: 34px;
+    height: 34px;
+    background-image: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-size: 34px 34px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+}
+
+.gender-specific-pg {
+    width: 95px;
+    height: 44px;
+    position: absolute;
+    left: 296px;
+    background-color: #28D939;
+    border-radius: 9px 9px 0px 9px;
+
+}
+
+.popular-hostel-in-kolkata {
+    /* margin-top: 20px; */
     width: 1323px;
-    height:380px;
-    background-color: beige;
-} */
-.popular-pg-text {
+    height: 465px;
 
-    font-size: 21px;
 
+}
+
+.column-hostel-in-kolkata-1 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    position: relative;
+    top: 17px;
+    left: 14px;
+    border-radius: 9px;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+
+
+
+}
+
+.column-hostel-in-kolkata-2 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+    position: relative;
+    top: 17px;
+    left: 28px;
+    border-radius: 9px;
+
+}
+
+.column-hostel-in-kolkata-3 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+    position: relative;
+    top: 17px;
+    left: 42px;
+    border-radius: 9px;
+
+}
+
+.column-hostel-1-1,
+.column-hostel-2-2,
+.column-hostel-3-3 {
+    width: 391px;
+    height: 32vh;
+    border-radius: 9px;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    background-color: #D9D9D9;
+}
+
+.hostel-name {
+    position: absolute;
+    top: 38vh;
+    left: 15px;
+    font-size: 15px;
+}
+
+.hostel-area {
+    position: absolute;
+    top: 42vh;
+    left: 15px;
+    font-size: 15px;
+}
+
+.hostel-btn {
+    position: absolute;
+    width: 391px;
+    height: 5vh;
+    top: 48vh;
+    left: 15px;
+    border-radius: 9px;
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 17px;
+}
+
+.like-meter-hostel {
+    width: 34px;
+    height: 34px;
+    background-image: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-size: 34px 34px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+}
+
+.gender-specific-hostel {
+    width: 95px;
+    height: 44px;
+    position: absolute;
+    left: 296px;
+    background-color: #28D939;
+    border-radius: 9px 9px 0px 9px;
+
+}
+
+
+.popular-apartment-in-kolkata {
+
+    width: 1323px;
+    height: 465px;
+
+}
+
+.column-apartment-in-kolkata-1 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    position: relative;
+    top: 17px;
+    left: 14px;
+    border-radius: 9px;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+
+
+
+}
+
+.column-apartment-in-kolkata-2 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+    position: relative;
+    top: 17px;
+    left: 28px;
+    border-radius: 9px;
+
+}
+
+.column-apartment-in-kolkata-3 {
+    width: 420px;
+    height: 55vh;
+    float: left;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+    position: relative;
+    top: 17px;
+    left: 42px;
+    border-radius: 9px;
+
+}
+
+.column-apartment-1-1,
+.column-apartment-2-2,
+.column-apartment-3-3 {
+    width: 391px;
+    height: 32vh;
+    border-radius: 9px;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    background-color: #D9D9D9;
+}
+
+.apartment-name {
+    position: absolute;
+    top: 38vh;
+    left: 15px;
+    font-size: 15px;
+}
+
+.apartment-area {
+    position: absolute;
+    top: 42vh;
+    left: 15px;
+    font-size: 15px;
+}
+
+.apartment-btn {
+    position: absolute;
+    width: 391px;
+    height: 5vh;
+    top: 48vh;
+    left: 15px;
+    border-radius: 9px;
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 17px;
+}
+
+.like-meter-apartment {
+    width: 34px;
+    height: 34px;
+    background-image: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-size: 34px 34px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+}
+
+.gender-specific-apartment {
+    width: 95px;
+    height: 44px;
+    position: absolute;
+    left: 296px;
+    background-color: #28D939;
+    border-radius: 9px 9px 0px 9px;
+
+}
+
+.gender-text {
+    text-align: center;
+    position: relative;
+    top: 11px;
+    font-size: 17px;
+    color: white;
 }
 
 .footer-section {
     width: 1520px;
-    height: 450px;
+    height: 460px;
 
 }
 
 .footer-text-section {
     border-top: 1px solid black;
-    width: 1323px;
+    width: 1290px;
     position: absolute;
-    left: 90px;
+    left: 120px;
 
 }
 
@@ -285,7 +605,7 @@
     height: 238px;
     position: absolute;
     top: 125px;
-    font-size: 18px;
+    font-size: 16px;
     word-spacing: 3px;
 }
 
@@ -301,7 +621,7 @@
     width: 125px;
     height: 36px;
     position: absolute;
-    left: 996px;
+    left: 1020px;
     top: 60px;
     font-size: 21px;
 }
@@ -310,10 +630,69 @@
     width: 220px;
     height: 234px;
     position: absolute;
-    left: 998px;
+    left: 1020px;
     top: 125px;
-    font-size: 18px;
+    font-size: 16px;
     word-spacing: 2px;
+
+}
+
+.facebook-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1010px;
+    background-image: url(images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
+
+.instagram-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1060px;
+    background-image: url(images/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
+
+.twitter-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1110px;
+    background-image: url(images/twitter.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
+
+.youtube-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1160px;
+    background-image: url(images/youtube.png);
+    background-size: 35px 35px;
+
+}
+
+.linkedln-logo {
+    Width: 35px;
+    Height: 35px;
+    position: absolute;
+    top: 380px;
+    left: 1210px;
+    background-image: url(images/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
 
 }
 
@@ -335,61 +714,20 @@
 
 }
 
-.facebook-logo {
-    Width: 35px;
-    Height: 35px;
-    position: absolute;
-    top: 380px;
-    left: 979px;
-    background-image: url(images/facebook.png);
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
-
-}
-
-.instagram-logo {
-    Width: 35px;
-    Height: 35px;
-    position: absolute;
-    top: 380px;
-    left: 1030px;
-    background-image: url(images/instagram.png);
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
-
-}
-
-.twitter-logo {
-    Width: 35px;
-    Height: 35px;
-    position: absolute;
-    top: 380px;
-    left: 1081px;
-    background-image: url(images/twitter.png);
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
-
-}
-
-.youtube-logo {
-    Width: 35px;
-    Height: 35px;
-    position: absolute;
-    top: 380px;
-    left: 1132px;
-    background-image: url(images/youtube.png);
-    background-size: 35px 35px;
-
-}
-
-.linkedln-logo {
-    Width: 35px;
-    Height: 35px;
-    position: absolute;
-    top: 380px;
-    left: 1183px;
-    background-image: url(images/linkedin.png);
-    background-repeat: no-repeat;
-    background-size: 35px 35px;
-
-}
+/* @media screen and (min-width:1200px) and (max-width: 1520px) { 
+    .navbar{
+        width: 1300px;
+    }
+    .listproperty{
+        position: relative;
+        left: 950px;
+    }
+    .prop{
+        position: relative;
+        left: 35px;
+    }
+    .about{
+        position: relative;
+        left:1300px;
+    }
+} */
