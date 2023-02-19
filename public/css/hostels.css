@@ -4,7 +4,7 @@ body{
     margin:0px;
     font-family: 'Inter', sans-serif;
 }
-.nav-bar{
+.nav-bar-hostels{
     background-color: #00D285;
     padding: 10px 31px;
     color: white;
@@ -13,10 +13,10 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.brand-name {
+.brand-name-hostels {
     font-size: 24px;
 }
-.nav-search {
+.nav-search-hostels {
     background-color: white;
     border: 1px solid white;
     border-radius: 9px;
@@ -27,7 +27,7 @@ body{
     height: 40px;
     padding: 0 5px;
 }
-.search-item {
+.search-item-hostels {
     color: white;
     border: 1px solid #00d285;
     padding: 6px 8px;
@@ -35,13 +35,13 @@ body{
     background-color: #00d285;
     font-size: 15px;
 }
-.filters-section {
+.filters-section-hostels {
     padding: 5px 31px;
     display: flex;
     box-shadow: 0px 2px 9px #c1c1c1;
 
 }
-.filter-item-box {
+.filter-item-box-hostels {
     border: 1px solid black;
     width: 11%;
     padding: 4px;
@@ -53,25 +53,25 @@ body{
     margin-right: 5px;
     height: 26px;
 }
-span.down-arrow {
+span.down-arrow-hostels {
     display: flex;
 }
-section.main-section {
+section.main-section-hostels {
     padding: 45px 31px;
 }
-.section-heading {
+.section-heading-hostels {
     font-weight: 600;
     margin-bottom: 50px;
     font-size: 20px;
     display: flex;
     justify-content: center;
 }
-.items-container {
+.items-container-hostels {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.items {
+.items-hostels {
     /* width: 280px; */
     /* border-radius: 9px; */
     /* border: 1px solid white; */
@@ -81,7 +81,7 @@ section.main-section {
     margin-bottom: 55px;
     border-radius: 9px;
 }
-.items-image {
+.items-image-hostels {
     width: 280px;
     height: 210px;
     background: url(/Assets/Images/house.jpg);
@@ -90,15 +90,15 @@ section.main-section {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
-.items-details {
+.items-details-hostels {
     padding: 15px 5px;
 }
-.btn-container {
+.btn-container-hostels {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
 }
-.view-details-btn {
+.view-details-btn-hostels {
     display: flex;
     justify-content: center;
     /* padding: 5px; */

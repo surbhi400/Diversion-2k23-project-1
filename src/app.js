@@ -20,6 +20,24 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(express.static(static_path))
 
+//state and their cities
+// let Country = require('country-state-city').Country;
+// let State = require('country-state-city').State;
+// let City = require('country-state-city').City;
+
+// const allCities = State.getStatesOfCountry("IN");
+// const country = document.querySelector('#country');
+// allCities.forEach(city => {
+//     const options = document.createElement('option');
+//     options.text = city.name;
+//     options.value = city.name;
+//     country.append(options);
+    //    console.log(city.name);
+// })
+
+
+
+
 //routing
 app.get("", (req, res)=> {
     res.render("index")
