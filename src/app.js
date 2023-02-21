@@ -63,6 +63,9 @@ app.get("/apartment.hbs", (req, res)=>{
 app.get("/propertydetails.hbs", (req, res)=>{
     res.render("propertydetails")
 })
+app.get("/profilepage.hbs", (req, res)=>{
+    res.render("profilepage")
+})
 
 app.post("/home.hbs", async(req, res) => {
     try{
