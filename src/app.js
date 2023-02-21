@@ -47,11 +47,20 @@ app.get("/pg.hbs", (req, res)=>{
 app.get("/apartment.hbs", (req, res)=>{
     res.render("apartment")
 })
+
 app.get("/addproperty.hbs", (req, res)=>{
     res.render("addproperty")
 })
-//signup
-app.post("/signup.hbs", async(req, res) => {
+
+app.get("/propertydetails.hbs", (req, res)=>{
+    res.render("propertydetails")
+})
+app.get("/profilepage.hbs", (req, res)=>{
+    res.render("profilepage")
+})
+//sign up
+app.post("/home.hbs", async(req, res) => {
+
     try{
         const Password = req.body.password;
         const confirmpassword = req.body.confirmpassword;
