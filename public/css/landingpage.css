@@ -298,7 +298,7 @@ section.faq {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 160px;
 }
 .faq-heading {
     font-size: 19px;
@@ -319,6 +319,9 @@ span.questions {
 .question-item {
     display: flex;
     justify-content: space-between;
+    box-shadow: 2px 2px 9px 1px #cbcbcb;
+    margin-bottom: 10px;
+    padding: 0 10px;
 }
 select {
     width: 100%;
@@ -390,4 +393,14 @@ span#footer-items-heading {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.hr-question{
+    margin:0;
+}
+.answer-item {
+    font-size: 16px;
+    line-height: 2.8;
+    margin-bottom: 10px;
+    display: none;
+    padding: 0 10px;
 }

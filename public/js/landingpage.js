@@ -1,33 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const country = document.querySelector('#country');
+//     const country = document.querySelector('#country');
 
-
-    // fetch(' https://api.countrystatecity.in/v1/countries').then(res => {
+    // fetch('https://restcountries.com/v3.1/all').then(res => {
     //     return res.json();
     // }).then(data => {
-    //     console.log(data);
-    // }).catch(err => {
-    //     console.log(err);
-    // })
-
-    fetch('https://restcountries.com/v3.1/all').then(res => {
-        return res.json();
-    }).then(data => {
        
         
-        data.forEach(countries => {
-            const options = document.createElement('option');
-            options.text = countries.name.official;
-            options.value = countries.name.official;
-            country.append(options);
+    //     data.forEach(countries => {
+    //         const options = document.createElement('option');
+    //         options.text = countries.name.official;
+    //         options.value = countries.name.official;
+    //         country.append(options);
             
            
             
-        });
+    //     });
             
-    }).catch(err => {
-        console.log(err);
-    })
+    // }).catch(err => {
+    //     console.log(err);
+    // })
 
     
 
@@ -46,5 +37,24 @@ document.addEventListener('DOMContentLoaded', () => {
 // })
     
 });
+// import csc from 'country-state-city';
+// console.log(State.getStatesOfCountry("IN"));
+
+const question_item = document.getElementsByClassName('question-item');
+var i;
+for(i = 0; i< question_item.length; i++){
+    question_item[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+    
+
+    const answer_item = this.nextElementSibling;
+    if(answer_item.style.display === "block"){
+        answer_item.style.display = "none";
+    }
+    else {
+        answer_item.style.display = "block";
+    }
+});
+}
 
 
