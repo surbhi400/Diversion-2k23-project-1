@@ -1,9 +1,14 @@
 const express = require('express');
 const path = require('path');
+const bcrypt = require("bcryptjs");
 const hbs = require('hbs');
 const app = express();
 require("./db/conn");
-const Signup = require("./models/users");
+
+const users = require("./models/users");
+const propertydetails = require("./models/addproperty");
+
+const { json } = require("express");
 const port = process.env.PORT || 8000
 
 //public static path
@@ -20,26 +25,8 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(express.static(static_path))
 
-//state and their cities
-// let Country = require('country-state-city').Country;
-// let State = require('country-state-city').State;
-// let City = require('country-state-city').City;
-
-// const allCities = State.getStatesOfCountry("IN");
-// const country = document.querySelector('#country');
-// allCities.forEach(city => {
-//     const options = document.createElement('option');
-//     options.text = city.name;
-//     options.value = city.name;
-//     country.append(options);
-    //    console.log(city.name);
-// })
-
-
-
-
 //routing
-app.get("", (req, res)=> {
+app.get("/", (req, res)=> {
     res.render("index")
 })
 app.get("/signup.hbs", (req, res)=> {
@@ -60,26 +47,33 @@ app.get("/pg.hbs", (req, res)=>{
 app.get("/apartment.hbs", (req, res)=>{
     res.render("apartment")
 })
+
+app.get("/addproperty.hbs", (req, res)=>{
+    res.render("addproperty")
+})
+
 app.get("/propertydetails.hbs", (req, res)=>{
     res.render("propertydetails")
 })
 app.get("/profilepage.hbs", (req, res)=>{
     res.render("profilepage")
 })
-
+//sign up
 app.post("/home.hbs", async(req, res) => {
+
     try{
-        const password = req.body.password;
+        const Password = req.body.password;
         const confirmpassword = req.body.confirmpassword;
 
-        if(password === confirmpassword){
-            const usersignupdata = new Signup({
+        if(Password === confirmpassword){
+            const usersignupdata = new users({
                 name : req.body.name,
                 email : req.body.email,
                 contact : req.body.contact,
-                password : password,
+                password : Password,
                 confirmpassword : confirmpassword
             })
+
             const registered = await usersignupdata.save();
             res.status(201).render("home");
         }
@@ -90,8 +84,69 @@ app.post("/home.hbs", async(req, res) => {
         res.status(400).send(err);
     }
 })
-// app.get("*", (req, res)=> {
-//     res.send("404 error page oops")
+
+//login
+
+app.post("/login", async(req, res) => {
+    try{
+        const email = req.body.email; //getting user's email
+        const password = req.body.password; // getting user's password from the form
+
+        const useremail = await users.findOne({email:email});
+
+        const isMatch = await bcrypt.compare(password, useremail.password);
+        
+        if(isMatch){ // if password in the database and password entered by the user matched
+            res.status(201).render("home");
+        }else{
+            res.send("invalid login details");
+        }
+
+    }catch (error) {
+        res.status(400).send("invalid login details")
+    }
+})
+
+//Sellers Property Details
+app.post("/addproperty.hbs", async(req, res)=> {
+    try{
+        // const selectedPropertyType = req.body.propertytype;
+        // console.log(selectedPropertyType);
+        const sellerspropertydetails = new propertydetails({
+            location : req.body.location,
+            name : req.body.name,
+            propertytype : req.body.propertytype,
+            gender : req.body.gender,
+            roomtype : req.body.roomtype,
+            budget : req.body.budget,
+            wifi : req.body.wifi,
+            laundary : req.body.laundary,
+
+        })
+        const sellerpropertydetail = await sellerspropertydetails.save();
+        // if(selectedPropertyType === pg){
+        //     res.status(201).render("pg");
+        // }
+        // else if(selectedPropertyType === hostel){
+        //     res.status(201).render("hostel");
+        // }
+        // else{
+        //     res.status(201).render("apartment");
+        // }
+        res.status(201).render("home");
+    }catch (error) {
+        res.status(400).send("Sorry! couldn't add your property")
+    }
+})
+
+
+// let countries = require('country-state-city').Country;
+// let State = require('country-state-city').State;
+
+
+// const states = State.getStatesOfCountry("IN");
+// states.forEach(state => {
+//     console.log(state.name);
 // })
 
 app.listen(port, () => {
