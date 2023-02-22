@@ -3,7 +3,38 @@ const path = require('path');
 const bcrypt = require("bcryptjs");
 const hbs = require('hbs');
 const app = express();
-require("./db/conn");
+
+// connecting to mongodb atlas
+const mongoose = require("mongoose");
+mongoose.set("strictQuery", false);
+
+// const DB = 'mongodb+srv://thefabcoders:I5zlRssCvZ6uwVc0@cluster0.ynaozwh.mongodb.net/?retryWrites=true&w=majority'
+
+// mongoose.connect("DB", {
+//     useNewUrlParser: true
+//     // useUnifiedTopology: true, 
+// })
+// .then(() => {
+//     console.log(`connection successful`);
+// }).catch((err)=>{
+//     console.log(err);
+// });
+const database = module.exports = () => {
+    const connectionParams = {
+        useNewUrlParser: true,
+        uuseUnifiedTopology: true,
+    }
+    try {
+        mongoose.connect('mongodb+srv://thefabcoders:I5zlRssCvZ6uwVc0@cluster0.ynaozwh.mongodb.net/?retryWrites=true&w=majority');
+        console.log('Database connected succesfully')
+    }catch(error){
+        console.log(error);
+        console.log('Database connection failed')
+    }
+}
+database();
+
+// require("./db/conn");
 
 const users = require("./models/users");
 const propertydetails = require("./models/addproperty");
@@ -59,7 +90,7 @@ app.get("/profilepage.hbs", (req, res)=>{
     res.render("profilepage")
 })
 //sign up
-app.post("/home.hbs", async(req, res) => {
+app.post("/signup.hbs", async(req, res) => {
 
     try{
         const Password = req.body.password;
@@ -103,7 +134,7 @@ app.post("/login", async(req, res) => {
         }
 
     }catch (error) {
-        res.status(400).send("invalid login details")
+        res.status(400).send("Invalid login details")
     }
 })
 
