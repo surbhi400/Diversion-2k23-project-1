@@ -49,9 +49,10 @@ section.header-section-hostels {
     border-radius: 25px;
 }
 .filters-section-hostels {
-    padding: 5px 31px;
+    padding: 8px 31px;
     display: flex;
     box-shadow: 0px 2px 9px #c1c1c1;
+    background: url(/Assets/Images/blank.png);
 
 }
 .filter-item-box-hostels {
@@ -64,7 +65,7 @@ section.header-section-hostels {
     align-items: center;
     font-size: 12px;
     margin-right: 5px;
-    height: 26px;
+    height: 22px;
 }
 span.down-arrow-hostels {
     display: flex;

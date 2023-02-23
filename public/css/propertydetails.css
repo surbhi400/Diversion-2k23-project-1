@@ -35,10 +35,11 @@ body{
     border-radius: 50px;
     margin-right: 120px;
 }
-.main-content-container{
-    padding:50px 120px;
-    
-    
+.main-content-container {
+    padding: 50px 120px;
+    position: relative;
+    top: 62px;
+    margin-bottom: 100px;
 }
 .property-info{
   
@@ -268,7 +269,7 @@ body{
         justify-content: center;
         
 }
-.footer-section{
+/* .footer-section{
     display: flex;
     width: 100%;
     height: 400px; 
@@ -308,7 +309,7 @@ body{
     background-color: #464646;
     justify-content: center;
     color: white;
-} 
+}  */
 @media screen and (max-width: 530px){
     .property-name,
         .property-cost,
