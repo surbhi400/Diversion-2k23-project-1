@@ -23,6 +23,7 @@
 }
 .property-location-heading-add-property-section {
     margin-bottom: 5px;
+   
 }
 input#location {
     width: 98%;
@@ -67,6 +68,31 @@ button.submit-btn-add-property {
     margin-bottom: 20px;
     line-height: 2.8;
 }
-/* input#file {
-    display: none;
-} */
+input#file {
+    margin-left:65px;
+    
+}
+@media screen and (max-width:427px) {
+    .fill-details-add-property-pictures-section {
+        padding: 3px;
+    }
+    input#file {
+        font-size: 11px;
+    }
+        
+    .files-to-be-attached {
+        font-size: 11px;
+    }
+    
+}
+@media  screen and (min-width:427px) and (max-width:550px) {
+    input#file{
+        font-size:13px;
+    }
+    .files-to-be-attached{
+        font-size:13px;
+    }
+    .fill-details-add-property-pictures-section{
+        padding:10px;
+    }
+}
