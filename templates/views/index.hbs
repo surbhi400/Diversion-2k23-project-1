@@ -25,7 +25,7 @@
                 your preferred Location
             </div>
             <div class="search-box-container">
-                <div class="search-box-item">
+                {{!-- <div class="search-box-item"> --}}
                     {{!-- Location
                     <span class="search-box-item-logo">
                         <img src="./Assets/Images/down-arrow.png" alt="" height="15px" width="15px">
@@ -33,9 +33,9 @@
                     {{!-- <select name="country" id="country">
                         <option value="">Choose a state</option>
                     </select> --}}
-                    <input type="text" name="city" id="city" placeholder="Enter City">
+                    {{!-- <input type="text" name="city" id="city" placeholder="Enter City">
                 </div>
-                <hr class="horizontal-line">
+                <hr class="horizontal-line"> --}}
                 {{!-- <div class="search-box-item"> --}}
                     {{!-- Locality
                     <span class="search-box-item-logo">
@@ -51,16 +51,20 @@
                     <span class="search-box-item-logo">
                         <img src="./Assets/Images/down-arrow.png" alt="" height="15px" width="15px">
                     </span> --}}
-                    <select name="propertyType" id="propertytype">
-                        <option value="">What are you looking for?</option>
-                        <option value="Hostel">Hostel</option>
-                        <option value="pg">pg</option>
-                        <option value="Apartment">Apartment</option>
+                    <select name="propertyType" id="propertytype" onchange="javascript:handleSelect(this)">
+                        <option value=""> What are you looking for?</option>
+                        <option value="hostels">Hostel</option>
+                        <option value="pg"> pg</option>
+                        <option value="apartment">Apartment</option>
                     </select>
                 </div>
-                <div class="search">
+                
+                <button type="submit" class="search">
+                    {{!-- <a target="_blank" rel="noopener noreferrer" id="search-link"></a> --}}
                     Search
+                    {{!-- </a> --}}
                 </div>
+                
             </div>
         </div>
         <div class="hostels-graphics-container">
@@ -312,7 +316,14 @@
         </div>
     </section> --}}
     {{>footer}}
+    <script type="text/javascript">
+  function handleSelect(elm)
+  {
+     window.location = elm.value+".hbs";
+  }
+</script>
     <script src="/js/landingpage.js"></script>
+    {{!-- <script type="module" src="/js/index.js"></script> --}}
     {{!-- <script type="module" src="/js/citystate.js"></script> --}}
     {{!-- <script src="/src/app.js"></script> --}}
 </body>
