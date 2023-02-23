@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Details Page</title>
+    
+    <link rel="stylesheet" href="/css/hostels.css">
+    <link rel="stylesheet" href="/css/landingpage.css">
     <link rel="stylesheet" href="/css/propertydetails.css">
 </head>
 
 <body>
+    {{>addpropertyheader}}
     <!-- <div class="property-details-container"> -->
-    <div class="navbar">
+    {{!-- <div class="navbar">
         <div class="logo-about-section">
             <div class="logo">Logo.</div>
             <div class="about"></div>
         </div>
 
-    </div>
+    </div> --}}
     <div class="main-content-container">
         <div class="property-info">Shri Niketan Hostel </div>
 
@@ -79,6 +83,7 @@
         </div>
 
     </div>
+    {{>footer}}
 
 
     <!-- </div> -->
