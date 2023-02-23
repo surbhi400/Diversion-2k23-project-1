@@ -27,17 +27,17 @@ database();
 
 // require("./db/conn");
 
-const users = require("./models/users");
-const propertydetails = require("./models/addproperty");
+const users = require("./src/models/users");
+const propertydetails = require("./src/models/addproperty");
 
 const { json } = require("express");
 const { CLIENT_RENEG_LIMIT } = require("tls");
 const port = process.env.PORT || 8000;
 
 //public static path
-const static_path = path.join(__dirname, "../public");
-const template_path = path.join(__dirname, "../templates/views");
-const partials_path = path.join(__dirname, "../templates/partials");
+const static_path = path.join(__dirname, "./public");
+const template_path = path.join(__dirname, "./templates/views");
+const partials_path = path.join(__dirname, "./templates/partials");
 
 app.set("view engine", "hbs");
 app.set("views", template_path);
