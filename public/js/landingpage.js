@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-//     const country = document.querySelector('#country');
+    const country = document.querySelector('#country');
 
     // fetch('https://restcountries.com/v3.1/all').then(res => {
     //     return res.json();
@@ -35,6 +35,44 @@ document.addEventListener('DOMContentLoaded', () => {
 //         country.append(options);
        
 // })
+
+//country
+
+// fetch('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/countries.json').then(response => response.json())
+// .then(data => {
+//     data.forEach((c) => {
+        // const options = document.createElement('option');
+        // options.text = c;
+        // options.value = c;
+        // country.append(options);
+//         console.log(c);
+//     });
+// })
+
+//state
+
+// fetch('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/states.json').then(response => response.json())
+// .then(data => {
+//     data.forEach((s) => {
+        // const options = document.createElement('option');
+        // options.text = c;
+        // options.value = c;
+        // country.append(options);
+//         console.log(getStatesOfCountry('IN'));
+//     });
+// })
+
+//city
+// fetch('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/states.json').then(response => response.json())
+// .then(data => {
+//     data.forEach((c) => {
+        // const options = document.createElement('option');
+        // options.text = c;
+        // options.value = c;
+        // country.append(options);
+//         console.log(c.name);
+//     });
+// })
     
 });
 // import csc from 'country-state-city';
@@ -57,4 +95,24 @@ for(i = 0; i< question_item.length; i++){
 });
 }
 
+// getting user's entered data in the search bar
+
+const location_container = document.querySelector('#city');
+const entered_location = location_container.value;
+
+const selected_propertytype_value = document.querySelector('#propertytype').value;
+fetch(`/addproperty.hbs/:${entered_location}/:${selected_propertytype_value}`).then(res => {
+    return res.json();
+}).then((data) => {
+    data.forEach(element => {
+        console.log(element);
+    });
+}).catch((error) => {
+    console.log(error);
+    console.log("couldn't fetch data");
+})
+// const search_btn = document.querySelector('.search');
+// search_btn.addEventListener('onclick', function() {
+//     location.href = 'http://localhost:8000/pg.hbs'
+// })
 

@@ -35,10 +35,11 @@ body{
     border-radius: 50px;
     margin-right: 120px;
 }
-.main-content-container{
-    padding:50px 120px;
-    
-    
+.main-content-container {
+    padding: 50px 120px;
+    position: relative;
+    top: 62px;
+    margin-bottom: 100px;
 }
 .property-info{
   
@@ -310,7 +311,11 @@ body{
     justify-content: center;
     color: white;
 }  */
+
 /*@media screen and (max-width: 530px){
+
+@media screen and (max-width: 530px){
+
     .property-name,
         .property-cost,
         .tax-box,

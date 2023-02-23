@@ -13,6 +13,17 @@ body{
 
 .signup-graphics-container {
     margin-right: 160px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-essential-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
 }
 .signup-essentials {
     margin-right: 70px;
@@ -47,4 +58,34 @@ input:focus{
 .log-in-box{
     color: #00D285;
     font-weight: 600;
+}
+@media only screen and (max-width: 1200px){
+    #signup-graphics-image{
+        width: 500px;
+    
+    }
+    .signup-graphics-container{
+        margin-right:50px;
+    }
+}
+@media only screen and (max-width: 992px){
+    #signup-graphics-image{
+        width: 400px;
+    
+    }
+    .signup-graphics-container{
+        margin-right:30px;
+    }
+    .signup-essentials{
+        margin-right:20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    /* .signup-essentials{
+        margin-right:20px;
+    } */
+    .signup-graphics-container{
+        /* visibility: hidden; */
+        display: none;
+    }
 }
