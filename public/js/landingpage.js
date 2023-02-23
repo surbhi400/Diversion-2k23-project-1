@@ -97,22 +97,35 @@ for(i = 0; i< question_item.length; i++){
 
 // getting user's entered data in the search bar
 
-const location_container = document.querySelector('#city');
-const entered_location = location_container.value;
 
-const selected_propertytype_value = document.querySelector('#propertytype').value;
-fetch(`/addproperty.hbs/:${entered_location}/:${selected_propertytype_value}`).then(res => {
-    return res.json();
-}).then((data) => {
-    data.forEach(element => {
-        console.log(element);
-    });
-}).catch((error) => {
-    console.log(error);
-    console.log("couldn't fetch data");
-})
+// fetch(`/addproperty.hbs/:${entered_location}/:${selected_propertytype_value}`).then(res => {
+//     return res.json();
+// }).then((data) => {
+//     data.forEach(element => {
+//         console.log(element);
+//     });
+// }).catch((error) => {
+//     console.log(error);
+//     console.log("couldn't fetch data");
+// })
 // const search_btn = document.querySelector('.search');
 // search_btn.addEventListener('onclick', function() {
 //     location.href = 'http://localhost:8000/pg.hbs'
 // })
+// const selected_property_value = document.querySelector('#propertytype').value;
+// const search_btn = document.querySelector('.search');
+// const search_btn_link = document.querySelector('#search-link');
+
+// search_btn.addEventListener("onclick", function() {
+//     if(selected_property_value === "hostel"){
+//         search_btn_link.href = "http://www.google.com";
+//     }
+//     else if(selected_property_value === "pg"){
+//         location.href = "/pg.hbs";
+//     }
+//     else if(selected_property_value === "apartment"){
+//         location.href = "/apartment.hbs";
+//     }
+// })
+
 

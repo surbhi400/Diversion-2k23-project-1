@@ -159,11 +159,11 @@ app.post("/addproperty.hbs", async (req, res) => {
   }
 });
 
-app.get("/addproperty.hbs/:location/:propertytype", async (req, res) => {
-    const location = req.params.location;
+app.get("/addproperty.hbs/:propertytype", async (req, res) => {
+    // const location = req.params.location;
     const propertytype = req.params.propertytype;
-    console.log(req.params.location);
-    propertydetails.find({ location , propertytype},  (error, item) => {
+    console.log(req.params.propertytype);
+    propertydetails.find({ propertytype},  (error, item) => {
       if (error) {
         res.status(500).send(error);
       } else if (!item) {
