@@ -44,7 +44,7 @@ section.main-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     /* background-image: url(/Assets/Images/building-image.jpg); */
     background-size: cover;
     padding: 0 100px;
@@ -82,6 +82,10 @@ section.main-section {
     /* margin-left: 40px; */
     padding-left: 15px;
     /* padding: 5px 15px; */
+}
+p.main-heading-landing {
+    margin: 0;
+    line-height: 1.4;
 }
 .main-heading {
     font-size: 34px;
@@ -211,8 +215,16 @@ section.our-services-section {
     align-items: center;
 }
 .section-item-container {
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap; */
     /* margin-right: 15px; */
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items:center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
 }
 .section-heading {
     font-size: 26px;
@@ -225,8 +237,8 @@ section.our-services-section {
 .services-item {
     width: 280px;
     box-shadow: 5px 5px 5px #c5c1c1;
-    margin-bottom: 10px;
-    margin-right: 40px;
+    margin-bottom: 50px;
+    /* margin-right: 40px; */
 }
 .services-item-top-section {
     background-color: #00d285;
@@ -308,6 +320,7 @@ section.working-section {
 .working-section-item-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 section.faq {
@@ -360,7 +373,7 @@ section.footer-section {
 .footer-items-content {
     display: flex;
     justify-content: space-between;
-    line-height: 2.8;
+    line-height: 1.4;
     /* opacity: 0.8; */
 }
 span#footer-items-heading {
@@ -384,7 +397,7 @@ span#footer-items-heading:hover {
 }
 .footer-item-container-about {
     opacity: 0.8;
-    line-height: 3.2;
+    line-height: 1.8;
     margin-top:16px;
 }
 .footer-socials {
@@ -444,4 +457,136 @@ span#footer-items-heading:hover {
 }
 .log-in:hover::after{
     width:100%;
+}
+@media screen and (max-width: 1200px){
+    #image-hostel{
+        height:320px;
+    }
+}
+@media screen and (max-width: 992px){
+    section.main-section {
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+        height: auto;
+    }
+    .main-section-container {
+        margin-bottom: 200px;
+        width: 70%;
+        align-items: center;
+    }
+    .about-section-content {
+        padding: 50px 30px;
+    }
+    .about-main {
+        height:auto;
+    }
+    .image-container {
+        width: 200px;
+        height: 200px;
+    }
+    .main-heading {
+        width: 100%;
+    }
+    .search-box-container {
+        width: 100%;
+    }
+    .hostels-graphics-container{
+        margin-top:60px;
+        margin-bottom: 70px;
+    }
+    .section-item-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .working-section-item-image-container{
+        margin-right:40px;
+    }
+    .working-section-item-image-container2{
+        margin-left: 40px;
+    }
+    img.working-section-image-graphics-landing-page{
+        width: 200px;
+    }
+    .footer-items {
+        padding: 70px 20px;
+    }
+    .copyrights-section {
+        padding: 0 20px;
+    }
+    .section-item-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    section.main-section {
+        padding: 30px 30px;
+    }
+    .main-section-container {
+        margin-bottom: 0px;
+        height: auto;
+        margin-bottom: 60px;
+    }
+    .hostels-graphics-container{
+        margin-bottom: 50px;
+    }
+    #image-hostel{
+        height: 250px;
+    }
+    section.about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section-content{
+        padding: 50px 10px;
+        flex-direction: column;
+        width: 80%;
+    }
+    .about-main {
+       width: 100%;
+       flex-direction: column;
+    }
+    .about-section-picture {
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    .about-section-main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left:0;
+        width: 100%;
+        height: auto;
+    }
+    .questions-container{
+        width: 70%;
+    }
+    .question-item {
+        padding: 10px 10px;
+    }
+    .questions {
+        line-height: 1.6;
+    }
+    .footer-items-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 35px;
+    }
+    .search {
+        padding: 20px;
+    }
+    .main-heading {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 460px) {
+    #image-hostel {
+        height:200px;
+    }
+    
 }
