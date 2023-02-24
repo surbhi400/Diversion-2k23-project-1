@@ -17,18 +17,19 @@
 
 .sidebar-profile-page {
     width: 25%;
+    border-right: 2px solid #00D285;
 
 
 }
 
 .sidebar-content-profile-page {
-    padding: 60px 30px;
+    padding: 60px 20px;
 
 }
 
 .sidebar-content-item-profile-page {
     font-size: 17px;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -97,6 +98,7 @@ input#occupation {
     margin-bottom: 30px;
     border: none;
     width: 80%;
+    outline: none;
 
 }
 
@@ -129,6 +131,10 @@ input#occupation {
     margin-bottom: 10px;
 
 }
+.main-profile-page-profile-pic-content-item-2-1:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 .main-profile-page-profile-pic-content-item-2-2 {
     font-size: 17px;
@@ -138,52 +144,44 @@ input#occupation {
     border-radius: 5px;
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:589px) {
+    .sidebar-content-profile-page {
+        padding: 60px 0px;
+
+    }
+
     .sidebar-content-item-profile-page {
-
-        font-size: 10px;
+        font-size: 13px;
     }
 
-    .main-profile-page {
-        padding: 40px;
-    }
-
-    .form-content {
-        width: 70%;
-    }
-
-    .main-profile-page-profile-pic-content-item-2-1 {
-        font-size: 14.5px;
-    }
-
+    .main-profile-page-profile-pic-content-item-2-1,
     .main-profile-page-profile-pic-content-item-2-2 {
         font-size: 14.5px;
     }
 
-    .content-items-firstnmae,
+    .main-profile-page {
+        padding: 25px;
+    }
+
+    .content-item-address,
     .content-item-lastname,
     .content-item-occupation,
-    .content-item-address {
-        font-size: 17px;
+    .content-items-firstnmae {
+        font-size: 16px;
     }
 }
 
-@media screen and (min-width:540px) and (max-width:790px) {
-    .sidebar-content-item-profile-page {
-
-        font-size: 13px;
+@media screen and (min-width:589px) and (max-width:768px) {
+    .sidebar-content-profile-page {
+        padding: 60px 10px;
     }
 
     .main-profile-page {
-        padding: 60px 30px;
+        padding: 50px;
     }
 
-
-
-}
-
-@media screen and (min-width:790px) and (max-width:837px) {
     .sidebar-content-item-profile-page {
         font-size: 15px;
     }
+
 }

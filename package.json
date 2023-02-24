@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js -e js,hbs",
-    "start": "node app.js"
+    "dev": "nodemon src/app.js -e js,hbs"
+    
   },
   "repository": {
     "type": "git",

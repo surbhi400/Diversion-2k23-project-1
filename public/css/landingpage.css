@@ -26,7 +26,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 140px;
+    /* width: 140px; */
+    width: 15%;
     font-size:18px;
 }
 .brand-name{
@@ -145,6 +146,13 @@ span.search-box-item-logo {
     align-items: center;
     margin-top: 100px;
     padding: 50px 100px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.about-section-content.active {
+    opacity: 1;
+    transform: scale(1);
 }
 .image-container{
     width: 300px;
@@ -239,7 +247,15 @@ section.our-services-section {
     box-shadow: 5px 5px 5px #c5c1c1;
     margin-bottom: 50px;
     /* margin-right: 40px; */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
+.services-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .services-item-top-section {
     background-color: #00d285;
     height: 10px;
@@ -369,6 +385,7 @@ select {
 section.footer-section {
     background-color: #1b1a1a;
     color: white;
+    border-top: 3px solid #00D285;
 }
 .footer-items-content {
     display: flex;
